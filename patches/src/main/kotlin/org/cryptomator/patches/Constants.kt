@@ -13,10 +13,7 @@ object Constants {
         packageName = APP_PACKAGE,
         apkFileType = ApkFileType.APK_REQUIRED,
         appIconColor = 0xFF4758A0,
-        signatures = setOf(
-            // Add signature hashes here when known
-            // For now, we'll try without specific signatures
-        ),
+        signatures = setOf<String>(),
         targets = listOf(
             AppTarget(
                 version = "1.12.3",
