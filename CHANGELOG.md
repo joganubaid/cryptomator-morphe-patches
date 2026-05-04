@@ -1,0 +1,14 @@
+# 1.0.0 (2026-05-04)
+
+
+### Bug Fixes
+
+* add PATCHES markers for release ([8d3a382](https://github.com/joganubaid/cryptomator-morphe-patches/commit/8d3a3820cddc789467349e99da086449b7e2a912))
+* completely remove extensions folder ([2272ad9](https://github.com/joganubaid/cryptomator-morphe-patches/commit/2272ad971749444dc800914551192c1df598acfe))
+* resolve build errors ([a5b1d89](https://github.com/joganubaid/cryptomator-morphe-patches/commit/a5b1d89a6f6bfa7dcb7edef859969a671f7a7a3e))
+* simplify patches to not require extension class ([3c5cc68](https://github.com/joganubaid/cryptomator-morphe-patches/commit/3c5cc689135789effe552233e0aa764395866a03))
+
+
+### Features
+
+* initial cryptomator morphe patches ([a675e2b](https://github.com/joganubaid/cryptomator-morphe-patches/commit/a675e2bd4060f544f23742a7551f365acbbcfbab))

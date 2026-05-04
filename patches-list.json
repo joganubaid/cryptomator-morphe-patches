@@ -1,4 +1,21 @@
 {
-  "version": "",
-  "patches": []
+  "version": "1.0.0",
+  "patches": [
+    {
+      "name": "Check License No-Op",
+      "description": "Makes VaultListPresenter.checkLicense() a no-op to skip license check",
+      "default": true,
+      "dependencies": [],
+      "compatiblePackages": null,
+      "options": []
+    },
+    {
+      "name": "License Bypass",
+      "description": "Bypasses Cryptomator license verification to enable premium features",
+      "default": true,
+      "dependencies": [],
+      "compatiblePackages": null,
+      "options": []
+    }
+  ]
 }

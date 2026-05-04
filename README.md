@@ -6,6 +6,18 @@ Morphe patches to unlock premium features in Cryptomator Android app.
 ## 🩹 Patches included
 
 <!-- PATCHES_START EXPANDED -->
+> **[v1.0.0](https://github.com/joganubaid/cryptomator-morphe-patches/releases/tag/v1.0.0)**&nbsp;&nbsp;•&nbsp;&nbsp;`main`&nbsp;&nbsp;•&nbsp;&nbsp;2 patches total
+<details open>
+<summary>🌐 Universal&nbsp;&nbsp;•&nbsp;&nbsp;2 patches</summary>
+<br>
+
+| 💊&nbsp;Patch | 📜&nbsp;Description | ⚙️&nbsp;Options |
+|----------|----------------|-----------|
+| [Check License No-Op](#check-license-no-op) | Makes VaultListPresenter.checkLicense() a no-op to skip license check |  |
+| [License Bypass](#license-bypass) | Bypasses Cryptomator license verification to enable premium features |  |
+
+</details>
+
 <!-- PATCHES_END -->
 
 - **License Bypass** - Bypasses Cryptomator license verification to enable premium features
