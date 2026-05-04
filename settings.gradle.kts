@@ -17,5 +17,7 @@ pluginManagement {
 }
 
 plugins {
-    id("app.morphe.patches") version "1.3.0"
+    id("app.morphe.patches") version "1.3.2"
 }
+
+include(":patches:stub")
