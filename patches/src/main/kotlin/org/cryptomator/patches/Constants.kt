@@ -13,7 +13,7 @@ object Constants {
         packageName = APP_PACKAGE,
         apkFileType = ApkFileType.APK_REQUIRED,
         appIconColor = 0xFF4758A0,
-        signatures = setOf<String>(),
+        signatures = setOf("placeholder"),
         targets = listOf(
             AppTarget(
                 version = "1.12.3",
