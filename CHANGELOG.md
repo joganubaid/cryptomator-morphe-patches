@@ -1,3 +1,14 @@
+## [1.0.3](https://github.com/joganubaid/cryptomator-morphe-patches/compare/v1.0.2...v1.0.3) (2026-05-04)
+
+
+### Bug Fixes
+
+* correct invalid JSON in .releaserc.json ([44786c2](https://github.com/joganubaid/cryptomator-morphe-patches/commit/44786c21530c3f2dd8d196f1f03f44f61a15f7a4))
+* properly remove invalid backmerge entry from .releaserc ([4af00f1](https://github.com/joganubaid/cryptomator-morphe-patches/commit/4af00f10080c53b6e0ce9d6d7572db1f3ac6a78c))
+* remove backmerge to dev (branch doesn't exist) ([85b0423](https://github.com/joganubaid/cryptomator-morphe-patches/commit/85b042390262cc6bbf5b85b1880b9906e30e598f))
+* remove backslashes from prepareCmd in .releaserc.json ([a13a0d9](https://github.com/joganubaid/cryptomator-morphe-patches/commit/a13a0d9243dfc63df1efd59d59447ba59961f634))
+* rename .releaserc to .releaserc.json to avoid YAML parsing issue ([6421fc0](https://github.com/joganubaid/cryptomator-morphe-patches/commit/6421fc0712f4290696e0ed770e9d08ebbecc6622))
+
 ## [1.0.2](https://github.com/joganubaid/cryptomator-morphe-patches/compare/v1.0.1...v1.0.2) (2026-05-04)
 
 
