@@ -1,13 +1,13 @@
-group = "app.template"
+group = "org.cryptomator"
 
 patches {
     about {
-        name = "UserXYZ Patches"
-        description = "Patches for apps I like"
-        source = "git@github.com:UserXYZ/morphe-patches.git"
-        author = "Awesome dev"
-        contact = "na"
-        website = "na"
+        name = "Cryptomator Patches"
+        description = "Patches to unlock premium features in Cryptomator"
+        source = "git@github.com:joganubaid/cryptomator-morphe-patches.git"
+        author = "joganubaid"
+        contact = "joganubaid@example.com"
+        website = "https://github.com/joganubaid/cryptomator-morphe-patches"
         license = "GPLv3"
     }
 }
@@ -19,7 +19,6 @@ kotlin {
 }
 
 dependencies {
-    // Used by JsonGenerator.
     implementation(libs.gson)
 }
 
@@ -32,7 +31,6 @@ tasks {
         classpath = sourceSets["main"].runtimeClasspath
         mainClass.set("app.morphe.util.PatchListGeneratorKt")
     }
-    // Used by gradle-semantic-release-plugin.
     publish {
         dependsOn("generatePatchesList")
     }

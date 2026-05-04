@@ -1,99 +1,61 @@
-# 👋🧩 Morphe Patches template
+# 🩹 Cryptomator Morphe Patches
 
-Template repository for Morphe Patches.
-
-&nbsp;
-## 🩹 Patches list
-
-<!-- PATCHES_START EXPANDED -->
-
-<!-- Do not modify this section by hand. The patch list is generated when release.yml creates a new release.
-     
-     If you wish for the patches list to be collapsed, then remove the word 'EXPANDED' from the comment tag above.
-
-     If you wish to manually keep this list updated then remove the PATCHES_START and PATCHES_END 
-     comment blocks entirely. -->
-
-#### A list of your patches will be automatically shown here after your first patches release is created.
-     
-<!-- PATCHES_END -->
+Morphe patches to unlock premium features in Cryptomator Android app.
 
 &nbsp;
+## 🩹 Patches included
+
+- **License Bypass** - Bypasses Cryptomator license verification to enable premium features
+- **Check License No-Op** - Makes VaultListPresenter.checkLicense() a no-op to skip license check on startup
+
 ## ❓ About
 
-This is a template to create a new Morphe Patches repository.
+This repository contains Morphe patches for Cryptomator (version 1.12.3) that bypass the license verification system, allowing access to premium features without a valid license.
 
-Morphe Patches template is based off the prior work of [ReVanced](https://github.com/ReVanced/revanced-patches-template).
-All modifications made by Morphe, along with their dates, can be found in the Git history.
+**For educational and security research purposes only.**
 
+## 🔧 Supported App Versions
 
-## 🚀 Get started
+| App | Version | Package |
+|-----|---------|---------|
+| Cryptomator | 1.12.3 | org.cryptomator |
 
-To start using this template, follow these steps:
+## 🚀 How to use
 
-1. [Create a new repository using this template](https://github.com/new?template_name=morphe-patches-template&template_owner=MorpheApp)
-2. Set up the [build.gradle.kts](patches/build.gradle.kts) file (Specifically, the 
-   [group of the project](patches/build.gradle.kts#L1), and the [About](patches/build.gradle.kts#L5-L11))
-3. Set up the [README.md](README.md) file[^1] (e.g, title, description, license, 
-   summary of the patches that are included in the repository), the [issue templates](.github/ISSUE_TEMPLATE)[^2]
-   and the [contribution guidelines](CONTRIBUTING.md)[^3].
-4. Choose a name for your patches project. Keep in mind you must use a unique name that does not 
-   imply or suggest authorship by the Morphe open source project. If unsure, then simply name these
-   patches after yourself ("UserXYZ Morphe patches"). See the [NOTICE](NOTICE) for details. 
-5. (Optional): Add `patches-bundle.png` to the project if you want a custom icon to show in
-   Morphe Manager instead of your GitHub profile avatar.
+### Using Morphe Manager (Recommended)
 
-🎉 You are now ready to start creating patches!
+1. Download [Morphe Manager](https://github.com/MorpheApp/morphe-manager)
+2. Add this repository as a patch source:
+   - URL: `https://github.com/joganubaid/cryptomator-morphe-patches`
+   - Or click: [Add to Morphe](https://morphe.software/add-source?github=joganubaid/cryptomator-morphe-patches)
+3. Select the desired patches and patch the app
 
-## 🧑‍💻 Usage
+### Building from source
 
-To develop and release Morphe Patches using this template, some things need to be considered:
+```bash
+# Clone the repository
+git clone https://github.com/joganubaid/cryptomator-morphe-patches.git
+cd cryptomator-morphe-patches
 
-- Development starts in feature branches. Once a feature branch is ready, it is squashed and merged into the `dev` branch
-- The `dev` branch is merged into the `main` branch once it is ready for release
-- Semantic versioning is used to version Morphe Patches.
-- [Semantic commit](https://kapeli.com/cheat_sheets/Semantic_Commits.docset/Contents/Resources/Documents/index) messages are used for commits
-- Commits on the `dev` branch and `main` branch are automatically released
-via the [release.yml](.github/workflows/release.yml) workflow, which is also responsible for generating the changelog
-and updating the version of Morphe Patches. It is triggered by pushing to the `dev` or `main` branch.
-The workflow uses the `publish` task to publish the release of Morphe Patches.
-- The `buildAndroid` task is used to build Morphe Patches so that it can be used on Android.
+# Build patches
+./gradlew build
 
+# Build for Android
+./gradlew buildAndroid
+```
 
-## 🤓 Tips
-- See the [patcher documentation](https://github.com/MorpheApp/morphe-patcher/blob/main/docs/1_patcher_intro.md)
-  for more examples of creating patches and fingerprints.
-- Do not manually edit any generated files such as: `patches-list.json`, `patches-bundle.json`, `CHANGELOG.md`.
-  These files will be automatically updated in the release action.
-- Do not force push any semantic release commits or you will break the release. To 'redo' the last release then:
-  - Git drop the last dev/main semantic release commit you want to redo.
-  - Delete the release from the release area of this repo and delete the tag   
-  - Make any other changes you wish to do
-  - Force push dev/main branch
-  - A new replacement release will be created by `release.yml`
+## 📋 Requirements
 
-
-## 📚 Everything else
-
-Optionally you can include a button/link in this readme that users can click to add your 
-patches to Morphe (update the links below after creating your new patches repo):
-
-#### How to use these patches
-
-Click here to add these patches to Morphe: https://morphe.software/add-source?github=xyz-user/xyz-patches
-
-Or manually add this repository url as a patch source in Morphe: https://github.com/xyz-user/xyz-patches
-
-### 📙 Contributing
-
-Thank you for considering contributing to UserXYZ Morphe Patches.  
-You can find the contribution guidelines [here](CONTRIBUTING.md).
-
-### 🛠️ Building
-
-To build UserXYZ Morphe Patches,
-you can follow the [Morphe documentation](https://github.com/MorpheApp/morphe-documentation).
+- Java 21
+- Gradle 8.x
+- Android SDK
 
 ## 📜 License
 
-UserXYZ Morphe Patches are licensed under the [GNU General Public License v3.0](LICENSE)
+Cryptomator Morphe Patches are licensed under the [GNU General Public License v3.0](LICENSE)
+
+## ⚠️ Disclaimer
+
+This software is provided for educational and security research purposes only. 
+The original Cryptomator app is property of Skymatic GmbH. 
+Please purchase a legitimate license to support the developers if you use this app regularly.

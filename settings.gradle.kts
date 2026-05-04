@@ -1,4 +1,6 @@
-rootProject.name = "morphe-patches-template"
+rootProject.name = "cryptomator-morphe-patches"
+
+include(":extensions:cryptomator")
 
 pluginManagement {
     repositories {
