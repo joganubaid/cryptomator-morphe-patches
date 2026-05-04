@@ -21,6 +21,7 @@ kotlin {
 dependencies {
     implementation(libs.gson)
     implementation(libs.morphe.patches.library)
+    compileOnly(project(":patches:stub"))
 }
 
 tasks {
