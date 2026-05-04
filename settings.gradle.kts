@@ -1,7 +1,5 @@
 rootProject.name = "cryptomator-morphe-patches"
 
-include(":extensions:cryptomator")
-
 pluginManagement {
     repositories {
         gradlePluginPortal()

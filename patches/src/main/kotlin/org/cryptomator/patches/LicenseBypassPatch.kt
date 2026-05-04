@@ -2,9 +2,6 @@ package org.cryptomator.patches
 
 import app.morphe.patcher.extensions.InstructionExtensions.addInstructions
 import app.morphe.patcher.patch.bytecodePatch
-import org.cryptomator.patches.Constants.COMPATIBILITY_CRYPTOMATOR_1_12_3
-
-private const val PATCHED_LICENSE_CHECK_CLASS = "Lorg/cryptomator/domain/usecases/PatchedLicenseCheck;"
 
 /**
  * Patches Cryptomator to bypass license verification.
@@ -18,16 +15,13 @@ val licenseBypassPatch = bytecodePatch(
     description = "Bypasses Cryptomator license verification to enable premium features",
     default = true
 ) {
-    compatibleWith(COMPATIBILITY_CRYPTOMATOR_1_12_3)
-
-    // Patch 1: Modify DoLicenseCheck.execute() to return PatchedLicenseCheck
+    // Patch DoLicenseCheck.execute() to return a valid LicenseCheck
     execute {
         DoLicenseCheckExecuteFingerprint.method.addInstructions(
             0,
             """
-                # Create PatchedLicenseCheck instance
-                new-instance v0, $PATCHED_LICENSE_CHECK_CLASS
-                invoke-direct {v0}, $PATCHED_LICENSE_CHECK_CLASS;-><init>()V
+                # Create and return a valid LicenseCheck
+                const-string v0, "patched@cryptomator.local"
                 return-object v0
             """
         )
@@ -44,8 +38,6 @@ val checkLicenseNoOpPatch = bytecodePatch(
     description = "Makes VaultListPresenter.checkLicense() a no-op to skip license check",
     default = true
 ) {
-    compatibleWith(COMPATIBILITY_CRYPTOMATOR_1_12_3)
-
     execute {
         VaultListPresenterCheckLicenseFingerprint.method.addInstructions(
             0,
