@@ -1,11 +1,5 @@
 {
-  "branches": [
-    "main",
-    {
-      "name": "dev",
-      "prerelease": true
-    }
-  ],
+  "branches": ["main"],
   "plugins": [
     [
       "@semantic-release/commit-analyzer", {
@@ -56,7 +50,5 @@
         ],
         "successComment": false
       }
-    ],
-    // Removed backmerge - dev branch doesn't exist
-  ]
+    ]
 }
