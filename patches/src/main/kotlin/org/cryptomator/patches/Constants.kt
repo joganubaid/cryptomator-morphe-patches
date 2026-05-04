@@ -12,7 +12,7 @@ object Constants {
         name = "Cryptomator",
         packageName = APP_PACKAGE,
         apkFileType = ApkFileType.APK_REQUIRED,
-        appIconColor = 0xFF4758A0,
+        appIconColor = "#4758A0",
         signatures = setOf("placeholder"),
         targets = listOf(
             AppTarget(
