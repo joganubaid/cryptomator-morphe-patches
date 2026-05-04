@@ -1,7 +1,7 @@
 {
-  "created_at": "2026-05-04T15:02:38",
-  "description": "# 1.0.0 (2026-05-04)\n\n\n### Bug Fixes\n\n* add PATCHES markers for release ([8d3a382](https://github.com/joganubaid/cryptomator-morphe-patches/commit/8d3a3820cddc789467349e99da086449b7e2a912))\n* completely remove extensions folder ([2272ad9](https://github.com/joganubaid/cryptomator-morphe-patches/commit/2272ad971749444dc800914551192c1df598acfe))\n* resolve build errors ([a5b1d89](https://github.com/joganubaid/cryptomator-morphe-patches/commit/a5b1d89a6f6bfa7dcb7edef859969a671f7a7a3e))\n* simplify patches to not require extension class ([3c5cc68](https://github.com/joganubaid/cryptomator-morphe-patches/commit/3c5cc689135789effe552233e0aa764395866a03))\n\n\n### Features\n\n* initial cryptomator morphe patches ([a675e2b](https://github.com/joganubaid/cryptomator-morphe-patches/commit/a675e2bd4060f544f23742a7551f365acbbcfbab))",
-  "download_url": "https://github.com/joganubaid/cryptomator-morphe-patches/releases/download/v1.0.0/patches-1.0.0.mpp",
+  "created_at": "2026-05-04T15:30:59",
+  "description": "## [1.0.1](https://github.com/joganubaid/cryptomator-morphe-patches/compare/v1.0.0...v1.0.1) (2026-05-04)\n\n\n### Bug Fixes\n\n* add packages read permission for CI ([04db7a8](https://github.com/joganubaid/cryptomator-morphe-patches/commit/04db7a8d6eada608fa3f58442a12e20efc2515f9))",
+  "download_url": "https://github.com/joganubaid/cryptomator-morphe-patches/releases/download/v1.0.1/patches-1.0.1.mpp",
   "signature_download_url": "",
-  "version": "1.0.0"
+  "version": "1.0.1"
 }

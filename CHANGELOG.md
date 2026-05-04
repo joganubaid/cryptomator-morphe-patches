@@ -1,3 +1,10 @@
+## [1.0.1](https://github.com/joganubaid/cryptomator-morphe-patches/compare/v1.0.0...v1.0.1) (2026-05-04)
+
+
+### Bug Fixes
+
+* add packages read permission for CI ([04db7a8](https://github.com/joganubaid/cryptomator-morphe-patches/commit/04db7a8d6eada608fa3f58442a12e20efc2515f9))
+
 # 1.0.0 (2026-05-04)
 
 
