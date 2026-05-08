@@ -2,6 +2,7 @@ package org.cryptomator.patches
 
 import app.morphe.patcher.extensions.InstructionExtensions.addInstructions
 import app.morphe.patcher.patch.bytecodePatch
+import org.cryptomator.patches.shared.Constants.COMPATIBILITY_CRYPTOMATOR
 
 /**
  * Patches Cryptomator to bypass license verification.
@@ -15,6 +16,8 @@ val licenseBypassPatch = bytecodePatch(
     description = "Bypasses Cryptomator license verification to enable premium features",
     default = true
 ) {
+    compatibleWith(COMPATIBILITY_CRYPTOMATOR)
+
     // Patch DoLicenseCheck.execute() to return a valid LicenseCheck
     execute {
         DoLicenseCheckExecuteFingerprint.method.addInstructions(
@@ -38,6 +41,8 @@ val checkLicenseNoOpPatch = bytecodePatch(
     description = "Makes VaultListPresenter.checkLicense() a no-op to skip license check",
     default = true
 ) {
+    compatibleWith(COMPATIBILITY_CRYPTOMATOR)
+
     execute {
         VaultListPresenterCheckLicenseFingerprint.method.addInstructions(
             0,

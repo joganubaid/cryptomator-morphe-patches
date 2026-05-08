@@ -1,15 +1,23 @@
-# 🩹 Cryptomator Morphe Patches
+# 🧩 Patches
+Cryptomator Morphe Patches
 
-Morphe patches to unlock premium features in Cryptomator Android app.
+## ❓ About
+
+Cryptomator Morphe Patches unlock premium features in the [Cryptomator](https://github.com/cryptomator/android) Android app.
 
 &nbsp;
-## 🩹 Patches included
+## 🩹 Patches list
 
 <!-- PATCHES_START EXPANDED -->
 > **[v1.0.3](https://github.com/joganubaid/cryptomator-morphe-patches/releases/tag/v1.0.3)**&nbsp;&nbsp;•&nbsp;&nbsp;`main`&nbsp;&nbsp;•&nbsp;&nbsp;2 patches total
 <details open>
-<summary>🌐 Universal&nbsp;&nbsp;•&nbsp;&nbsp;2 patches</summary>
+<summary>📦 Cryptomator&nbsp;&nbsp;•&nbsp;&nbsp;2 patches</summary>
 <br>
+
+**🎯 Supported versions:**
+
+| 1.12.3 |
+| :---: |
 
 | 💊&nbsp;Patch | 📜&nbsp;Description | ⚙️&nbsp;Options |
 |----------|----------------|-----------|
@@ -19,15 +27,6 @@ Morphe patches to unlock premium features in Cryptomator Android app.
 </details>
 
 <!-- PATCHES_END -->
-
-- **License Bypass** - Bypasses Cryptomator license verification to enable premium features
-- **Check License No-Op** - Makes VaultListPresenter.checkLicense() a no-op to skip license check on startup
-
-## ❓ About
-
-This repository contains Morphe patches for Cryptomator (version 1.12.3) that bypass the license verification system, allowing access to premium features without a valid license.
-
-**For educational and security research purposes only.**
 
 ## 🔧 Supported App Versions
 
@@ -53,10 +52,7 @@ git clone https://github.com/joganubaid/cryptomator-morphe-patches.git
 cd cryptomator-morphe-patches
 
 # Build patches
-./gradlew build
-
-# Build for Android
-./gradlew buildAndroid
+./gradlew clean :patches:buildAndroid
 ```
 
 ## 📋 Requirements
@@ -71,6 +67,6 @@ Cryptomator Morphe Patches are licensed under the [GNU General Public License v3
 
 ## ⚠️ Disclaimer
 
-This software is provided for educational and security research purposes only. 
-The original Cryptomator app is property of Skymatic GmbH. 
+This software is provided for educational and security research purposes only.
+The original Cryptomator app is property of Skymatic GmbH.
 Please purchase a legitimate license to support the developers if you use this app regularly.

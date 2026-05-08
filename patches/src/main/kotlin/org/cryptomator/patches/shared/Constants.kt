@@ -1,18 +1,16 @@
-package org.cryptomator.patches
+package org.cryptomator.patches.shared
 
 import app.morphe.patcher.patch.ApkFileType
 import app.morphe.patcher.patch.AppTarget
 import app.morphe.patcher.patch.Compatibility
 
-object Constants {
-    const val APP_PACKAGE = "org.cryptomator"
-    const val APP_VERSION = "1.12.3"
-
-    val COMPATIBILITY = Compatibility(
+internal object Constants {
+    val COMPATIBILITY_CRYPTOMATOR = Compatibility(
         name = "Cryptomator",
-        packageName = APP_PACKAGE,
+        packageName = "org.cryptomator",
         apkFileType = ApkFileType.APK_REQUIRED,
         appIconColor = "#4758A0",
+        // Replace with the actual SHA-256 certificate fingerprint of the Cryptomator APK.
         signatures = setOf("placeholder"),
         targets = listOf(
             AppTarget(
