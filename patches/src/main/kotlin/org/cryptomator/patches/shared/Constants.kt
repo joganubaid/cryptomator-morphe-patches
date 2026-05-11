@@ -9,7 +9,7 @@ internal object Constants {
         name = "Cryptomator",
         packageName = "org.cryptomator",
         apkFileType = ApkFileType.APK_REQUIRED,
-        appIconColor = "#4758A0",
+        appIconColor = "0x4758A0",
         // Replace with the actual SHA-256 certificate fingerprint of the Cryptomator APK.
         signatures = setOf("placeholder"),
         targets = listOf(
