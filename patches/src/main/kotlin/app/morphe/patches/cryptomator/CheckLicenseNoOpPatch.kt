@@ -14,25 +14,23 @@ import app.morphe.patcher.patch.bytecodePatch
  * Check License No-Op
  *
  * Makes VaultListPresenter.checkLicense() a no-op to skip license check entirely.
- * This is an alternative to License Bypass that simply short-circuits the check
- * rather than fabricating a positive result.
+ *
+ * Verified target via jadx decompilation:
+ *   VaultListPresenter.checkLicense() → void (private final)
+ *
+ * Strategy: Replace entire method body with immediate return-void.
+ * This prevents the license check UI flow from ever triggering.
  */
 val checkLicenseNoOpPatch = bytecodePatch(
     name = "Check License No-Op",
     description = "Makes VaultListPresenter.checkLicense() a no-op to skip license check",
     default = true,
 ) {
-    dependsOn(bytecodePatch(Fingerprints.checkLicense) {
+    dependsOn(bytecodePatch(Fingerprints.vaultListPresenterCheckLicense) {
         execute {
-            // Replace entire method body with: return true
-            // This makes checkLicense() always report "licensed"
+            // Replace entire method body with immediate return
             method.implementation!!.clearInstructions()
-            method.implementation!!.addInstruction(
-                "const/4 v0, 0x1",
-            )
-            method.implementation!!.addInstruction(
-                "return v0",
-            )
+            method.implementation!!.addInstruction("return-void")
         }
     })
 }
