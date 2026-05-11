@@ -16,16 +16,6 @@
     ],
     "@semantic-release/release-notes-generator",
     [
-      "@MorpheApp/changelog", {
-        "releaseJson": {
-          "path": "patches-bundle.json",
-          "downloadUrlTemplate": "https://github.com/${owner}/${repo}/releases/download/v${version}/patches-${version}.mpp",
-          "signatureUrlTemplate": ""
-        }
-      }
-    ],
-    "gradle-semantic-release-plugin",
-    [
       "@semantic-release/exec",
       {
         "prepareCmd": "./gradlew generatePatchesList \

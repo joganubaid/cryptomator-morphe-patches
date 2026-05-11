@@ -2,6 +2,11 @@ name: Release
 
 on:
   workflow_dispatch:
+    inputs:
+      send_fcm:
+        description: 'Send FCM push notification'
+        type: boolean
+        default: true
   push:
     branches:
       - main
@@ -39,6 +44,9 @@ jobs:
 
       - name: Install dependencies
         run: npm install
+
+      - name: Build and validate
+        run: ./gradlew :patches:buildAndroid generatePatchesList --no-daemon
 
       - name: Release
         uses: cycjimmy/semantic-release-action@v5

@@ -35,6 +35,8 @@ settings {
 
 include(":patches:stub")
 
+include(":extensions:cryptomator")
+
 // Include morphe-patcher as composite builds if they exist locally
 mapOf(
     "morphe-patcher" to "app.morphe:morphe-patcher",
