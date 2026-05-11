@@ -19,7 +19,7 @@ internal object Constants {
             "App icon color must contain 6 hex digits (RRGGBB): $color"
         }
 
-        return "#$normalized"
+        return "0x$normalized"
     }
 
     val COMPATIBILITY_CRYPTOMATOR = Compatibility(
