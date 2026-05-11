@@ -1,0 +1,48 @@
+.github/workflows/release.yml
+  s_86c57e83e01cb0::t_8170611925e248 5-9,48-49
+patches-list.json
+  s_86c57e83e01cb0::t_5c08c0416c1945 17-20,47-50,65
+settings.gradle.kts
+  s_86c57e83e01cb0::t_3a92fca236b18a 38-39,65
+.github/scripts/generate_patches_readme.py
+  s_86c57e83e01cb0::t_81c9d965e68cce 217
+.github/dependabot.yml
+  s_86c57e83e01cb0::t_1d354043eaa8ff 6,13,20,22
+extensions/cryptomator/src/main/java/app/morphe/extension/cryptomator/patches/Fingerprints.kt
+  s_86c57e83e01cb0::t_66ff49da45d85b 7-10,15-16,18
+  s_86c57e83e01cb0::t_b6761675192573 1-6,11-14,17,19
+patches/src/main/kotlin/app/morphe/patches/cryptomator/CheckLicenseNoOpPatch.kt
+  s_86c57e83e01cb0::t_2b2148781b3ff1 1-38
+patches/src/main/kotlin/app/morphe/patches/cryptomator/LicenseBypassPatch.kt
+  s_86c57e83e01cb0::t_c1fbd3d908adde 1-37
+patches/src/main/kotlin/app/morphe/patches/cryptomator/Fingerprints.kt
+  s_86c57e83e01cb0::t_7b75169a26ece4 1-24
+.github/workflows/build_pull_request.yml
+  s_86c57e83e01cb0::t_1dacd502e9bf34 30,36,38-39
+.github/workflows/open_pull_request.yml
+  s_86c57e83e01cb0::t_b4eda7be3f7216 31
+.releaserc
+  s_86c57e83e01cb0::t_88b53e58f22028 58
+package.json
+  s_86c57e83e01cb0::t_2129cb917094ab 9
+.npmrc
+  s_86c57e83e01cb0::t_ed7cca309251ec 1-2
+patches-bundle.json
+  s_86c57e83e01cb0::t_5433c30808eac9 2-3,7
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.4.4",
+  "base_commit_sha": "a5a170161226a21feea9d92d6b6e19c904a816da",
+  "prompts": {},
+  "sessions": {
+    "s_86c57e83e01cb0": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_1e6e2b4dfffet77COPOhCfbdRq",
+        "model": "unknown"
+      },
+      "human_author": "Joga Nubaid <jonub2503832@gmail.com>"
+    }
+  }
+}
