@@ -1,0 +1,28 @@
+extensions/cryptomator/src/main/java/app/morphe/extension/cryptomator/patches/Fingerprints.kt
+  s_86c57e83e01cb0::t_c325bbabd00d2f 8-14,19-34,36-38
+patches/src/main/kotlin/app/morphe/patches/cryptomator/CheckLicenseNoOpPatch.kt
+  s_86c57e83e01cb0::t_373ec256e86e20 17-22,29,31,33
+extensions/cryptomator/src/main/java/app/morphe/extension/cryptomator/patches/CryptomatorPatches.kt
+  s_86c57e83e01cb0::t_a0c0144f63f563 7,9-10,12-31,35-46
+patches/src/main/kotlin/app/morphe/patches/cryptomator/Fingerprints.kt
+  s_86c57e83e01cb0::t_2019dd707f8f9c 8,12-13,20-27,30,34-43,45,48
+  s_86c57e83e01cb0::t_d7f67c8e31f3ee 9-11,18,29,31-33,47
+patches/src/main/kotlin/app/morphe/patches/cryptomator/LicenseBypassPatch.kt
+  s_86c57e83e01cb0::t_95604e022f9a31 12,18-24,31,33-36,39,42
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.4.4",
+  "base_commit_sha": "ffd7c7f8200c885be5abfebe17aced2fbc97b3ea",
+  "prompts": {},
+  "sessions": {
+    "s_86c57e83e01cb0": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_1e6e2b4dfffet77COPOhCfbdRq",
+        "model": "unknown"
+      },
+      "human_author": "Joga Nubaid <jonub2503832@gmail.com>"
+    }
+  }
+}
