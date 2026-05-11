@@ -5,6 +5,8 @@ import app.morphe.patcher.patch.AppTarget
 import app.morphe.patcher.patch.Compatibility
 
 internal object Constants {
+    private val APP_ICON_COLOR_HEX = Regex("^[0-9A-F]{6}$")
+
     private fun normalizeAppIconColor(color: String): String {
         val normalized = color
             .trim()
@@ -13,7 +15,7 @@ internal object Constants {
             .removePrefix("0X")
             .uppercase()
 
-        require(normalized.matches(Regex("^[0-9A-F]{6}$"))) {
+        require(normalized.matches(APP_ICON_COLOR_HEX)) {
             "App icon color must contain 6 hex digits (RRGGBB): $color"
         }
 
