@@ -6,7 +6,26 @@
       "description": "Makes VaultListPresenter.checkLicense() a no-op to skip license check",
       "default": true,
       "dependencies": [],
-      "compatiblePackages": null,
+      "compatiblePackages": [
+        {
+          "packageName": "org.cryptomator",
+          "name": "Cryptomator",
+          "description": null,
+          "apkFileType": "APK_REQUIRED",
+          "appIconColor": "#4758A0",
+          "signatures": [
+            "placeholder"
+          ],
+          "targets": [
+            {
+              "version": "1.12.3",
+              "isExperimental": false,
+              "minSdk": 26,
+              "description": null
+            }
+          ]
+        }
+      ],
       "options": []
     },
     {
@@ -14,7 +33,26 @@
       "description": "Bypasses Cryptomator license verification to enable premium features",
       "default": true,
       "dependencies": [],
-      "compatiblePackages": null,
+      "compatiblePackages": [
+        {
+          "packageName": "org.cryptomator",
+          "name": "Cryptomator",
+          "description": null,
+          "apkFileType": "APK_REQUIRED",
+          "appIconColor": "#4758A0",
+          "signatures": [
+            "placeholder"
+          ],
+          "targets": [
+            {
+              "version": "1.12.3",
+              "isExperimental": false,
+              "minSdk": 26,
+              "description": null
+            }
+          ]
+        }
+      ],
       "options": []
     }
   ]

@@ -15,12 +15,17 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
-        uses: actions/checkout@v5
+        uses: actions/checkout@v6
 
       - name: Open pull request
         uses: repo-sync/pull-request@v2
         with:
-          destination_branch: 'main'
+          destination_branch: main
           pr_title: 'chore: ${{ env.MESSAGE }}'
-          pr_body: 'This pull request will ${{ env.MESSAGE }}.'
+          pr_body: |
+            This pull request will ${{ env.MESSAGE }}.
+
+            ## Before merging this PR
+
+            - [ ] Verify all patches build and work on the target Cryptomator version
           pr_draft: true
