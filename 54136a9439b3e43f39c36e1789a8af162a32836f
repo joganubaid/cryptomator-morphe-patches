@@ -1,0 +1,23 @@
+patches/src/main/kotlin/org/cryptomator/patches/Constants.kt
+  65a144f6e5bcd5d9 16
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.3.4",
+  "base_commit_sha": "54136a9439b3e43f39c36e1789a8af162a32836f",
+  "prompts": {
+    "65a144f6e5bcd5d9": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_20d47bda5ffe30wRil3roM41AA",
+        "model": "unknown"
+      },
+      "human_author": "Joga Nubaid",
+      "messages": [],
+      "total_additions": 1,
+      "total_deletions": 4,
+      "accepted_lines": 23,
+      "overriden_lines": 0
+    }
+  }
+}

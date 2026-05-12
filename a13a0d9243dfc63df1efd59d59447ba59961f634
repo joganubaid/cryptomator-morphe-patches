@@ -1,0 +1,23 @@
+.releaserc.json
+  65a144f6e5bcd5d9 25
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.3.4",
+  "base_commit_sha": "a13a0d9243dfc63df1efd59d59447ba59961f634",
+  "prompts": {
+    "65a144f6e5bcd5d9": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_20d47bda5ffe30wRil3roM41AA",
+        "model": "unknown"
+      },
+      "human_author": "Joga Nubaid",
+      "messages": [],
+      "total_additions": 1,
+      "total_deletions": 3,
+      "accepted_lines": 52,
+      "overriden_lines": 0
+    }
+  }
+}
