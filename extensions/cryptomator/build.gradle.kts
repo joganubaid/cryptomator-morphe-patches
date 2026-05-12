@@ -10,5 +10,6 @@ dependencies {
 android {
     defaultConfig {
         minSdk = 26
+        namespace = "app.morphe.extension.cryptomator"
     }
 }
