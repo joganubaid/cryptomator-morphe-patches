@@ -1,0 +1,23 @@
+patches-bundle.json
+  s_86c57e83e01cb0::t_e17151c116c32e 3
+extensions/cryptomator/build.gradle.kts
+  s_86c57e83e01cb0::t_424c7f76ec3f19 13
+extensions/cryptomator/src/main/java/app/morphe/extension/cryptomator/CryptomatorExtension.kt
+  s_86c57e83e01cb0::t_f2a5ad894f1037 1-38
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.4.4",
+  "base_commit_sha": "51958fa56796b44d9ac5f64e693d4b58f3229eab",
+  "prompts": {},
+  "sessions": {
+    "s_86c57e83e01cb0": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_1e6e2b4dfffet77COPOhCfbdRq",
+        "model": "unknown"
+      },
+      "human_author": "Joga Nubaid <jonub2503832@gmail.com>"
+    }
+  }
+}
