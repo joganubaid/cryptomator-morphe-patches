@@ -1,3 +1,23 @@
+# [1.1.0](https://github.com/joganubaid/cryptomator-morphe-patches/compare/v1.0.3...v1.1.0) (2026-05-14)
+
+
+### Bug Fixes
+
+* harden app icon color parsing and PR validation ([090d564](https://github.com/joganubaid/cryptomator-morphe-patches/commit/090d564403393a553aada46e40ef52a231d4e445))
+* normalize app icon color to #RRGGBB ([6c37530](https://github.com/joganubaid/cryptomator-morphe-patches/commit/6c3753006d5982d15017c9c5cacbe7645df4a09e))
+* pass appIconColor as integer to match upstream Compatibility API ([9f176a6](https://github.com/joganubaid/cryptomator-morphe-patches/commit/9f176a6823c00ecd73967ebebece5054d364f099))
+* remove invalid archive parameter from upload-artifact action ([564c3b1](https://github.com/joganubaid/cryptomator-morphe-patches/commit/564c3b1ede16a81c430c570c8033544d624c2b7b))
+* remove root AGP declaration conflicting with semantic release gradle classpath ([1668f91](https://github.com/joganubaid/cryptomator-morphe-patches/commit/1668f91702c839b7f08d8b7ff83726d581c2d60b))
+* revert to #RRGGBB format — Morphe patcher library now expects # prefix ([5134a0c](https://github.com/joganubaid/cryptomator-morphe-patches/commit/5134a0cb764721ae10f447e01de1af951d011b72))
+* use 0xRRGGBB format for app icon color ([03093f1](https://github.com/joganubaid/cryptomator-morphe-patches/commit/03093f13b12eba39afe2cc57c04f7968e1d5f4f2))
+* use 0xRRGGBB format for app icon color to match Morphe patcher requirements ([70150fc](https://github.com/joganubaid/cryptomator-morphe-patches/commit/70150fc141a00a49bdf319920c8400354ed8f331))
+* use actual Cryptomator APK signing certificate fingerprint ([f927f34](https://github.com/joganubaid/cryptomator-morphe-patches/commit/f927f343b313974f77212d27dabe166b45073fc9))
+
+
+### Features
+
+* align repository structure with upstream MorpheApp/morphe-patches ([3829146](https://github.com/joganubaid/cryptomator-morphe-patches/commit/3829146ecce0996ba7c0affea3711925ed357803))
+
 ## [1.0.3](https://github.com/joganubaid/cryptomator-morphe-patches/compare/v1.0.2...v1.0.3) (2026-05-04)
 
 

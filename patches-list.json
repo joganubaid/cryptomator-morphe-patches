@@ -1,5 +1,5 @@
 {
-  "version": "1.0.3",
+  "version": "1.1.0",
   "patches": [
     {
       "name": "Check License No-Op",
@@ -14,10 +14,7 @@
           "apkFileType": "APK_REQUIRED",
           "appIconColor": "#4758A0",
           "signatures": [
-            "f7c3ec3b0d588d3cb52983e9eb1a7421c93d4339a286398e71d7b651e8d8ecdd",
-            "9ded2750da263a6f6dcf5ee0d7efcb53dd91b35ed47f924d6e7e1cf4ab24f490",
-            "b6cf314a1472b5980d41f99489c1f6a471fea8d2d34f01be1957605ebc695a5e",
-            "7e28162e2b5d51dfbb568c36761f31e66a9faa9fbfa7da25cb7d1084bcb3f26b"
+            "f7c3ec3b0d588d3cb52983e9eb1a7421c93d4339a286398e71d7b651e8d8ecdd"
           ],
           "targets": [
             {
@@ -44,10 +41,7 @@
           "apkFileType": "APK_REQUIRED",
           "appIconColor": "#4758A0",
           "signatures": [
-            "f7c3ec3b0d588d3cb52983e9eb1a7421c93d4339a286398e71d7b651e8d8ecdd",
-            "9ded2750da263a6f6dcf5ee0d7efcb53dd91b35ed47f924d6e7e1cf4ab24f490",
-            "b6cf314a1472b5980d41f99489c1f6a471fea8d2d34f01be1957605ebc695a5e",
-            "7e28162e2b5d51dfbb568c36761f31e66a9faa9fbfa7da25cb7d1084bcb3f26b"
+            "f7c3ec3b0d588d3cb52983e9eb1a7421c93d4339a286398e71d7b651e8d8ecdd"
           ],
           "targets": [
             {
