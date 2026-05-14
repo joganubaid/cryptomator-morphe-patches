@@ -1,5 +1,5 @@
 {
-  "version": "1.0.3",
+  "version": "1.1.0",
   "patches": [
     {
       "name": "Check License No-Op",
@@ -14,7 +14,7 @@
           "apkFileType": "APK_REQUIRED",
           "appIconColor": "#4758A0",
           "signatures": [
-            "placeholder"
+            "f7c3ec3b0d588d3cb52983e9eb1a7421c93d4339a286398e71d7b651e8d8ecdd"
           ],
           "targets": [
             {
@@ -41,7 +41,7 @@
           "apkFileType": "APK_REQUIRED",
           "appIconColor": "#4758A0",
           "signatures": [
-            "placeholder"
+            "f7c3ec3b0d588d3cb52983e9eb1a7421c93d4339a286398e71d7b651e8d8ecdd"
           ],
           "targets": [
             {
